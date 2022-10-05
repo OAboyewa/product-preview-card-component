@@ -10,18 +10,101 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    * {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
+    
+    body {
       background-color: hsl(30, 38%, 92%);
     }
+
     .wrapper {
-      margin: auto;
-      width: 1440px;
+      margin-top: auto;
+      margin-bottom: auto;
     }
+
     .container {
       display: flex;
       flex-flow: row nowrap;
+      margin: auto;
+      padding: 0;
+      width: 800px;
+      border-radius: 15px;
       background-color: white;
     }
+
+    img {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    .info {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 35px;
+    }
+
+    .text-pri {
+      font-family: Montserrat;
+      font-size: large;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .text-pri-alt {
+      margin-left: 25px;
+      font-family: Montserrat;
+      font-size: large;
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .text-sec {
+      font-family: Fraunces;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .text-sec-alt {
+      font-family: Fraunces;
+      font-size: xx-large;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+    }
+
+    #text-price {
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
+
+    #button {
+      padding: 15px;
+      border-radius: 5px;
+      background-color: hsl(158, 36%, 37%);
+    }
+
+    #button {
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    #button:hover {
+      background-color: hsl(158, 36%, 18%);
+    }
+
+    #button > img {
+      margin-right: 5px;
+      width: 17px;
+      height: 17px;
+      transform: scaleX(-1);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -30,37 +113,27 @@
 
   <main class="wrapper">
     <section class="container">
-      <div>
+      <div style="margin: 0; padding: 0;">
         <img src="./images/image-product-desktop.jpg" alt="">
       </div>
-      <div>
-        <p>PERFUME</p>
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-        <p>
-          <span>$149.99</span><span>$169.99</span>
+      <div class="info">
+        <p class="text-pri">P E R F U M E</p>
+        <p class="text-sec">Gabrielle Essence Eau Da Parfum</p>
+        <p class="text-pri">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <p id="text-price">
+          <span  class="text-sec-alt">$149.99</span><span class="text-pri-alt">$169.99</span>
         </p>
-        <div>
-          <a href="http://#">Add to Cart</a>
-        </div>
+          <a class="text-pri" id="button" href="http://#">
+            <img src="./images/icon-cart.svg" alt=""> Add to Cart
+          </a>
+      </div>
+    </section>
+    <section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">OAboyewa</a>.
       </div>
     </section>
   </main>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">OAboyewa</a>.
-  </div>
 </body>
 </html>
