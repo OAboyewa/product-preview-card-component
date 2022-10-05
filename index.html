@@ -19,16 +19,19 @@
     }
 
     .wrapper {
-      margin-top: auto;
-      margin-bottom: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      row-gap: 15px;
+      height: 900px;
     }
 
     .container {
       display: flex;
       flex-flow: row nowrap;
-      margin: auto;
-      padding: 0;
-      width: 800px;
+      width: 725px;
+      height: 500px;
       border-radius: 15px;
       background-color: white;
     }
@@ -36,33 +39,33 @@
     img {
       margin: 0;
       padding: 0;
-      width: 400px;
+      width: 350px;
       height: 100%;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
     }
 
     .info {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 35px;
+      padding: 30px;
+      overflow: auto;
     }
 
     .text-pri {
       font-family: Montserrat;
-      font-size: large;
+      font-size: medium;
       color: hsl(228, 12%, 48%);
     }
 
     .text-pri-alt {
       margin-left: 25px;
       font-family: Montserrat;
-      font-size: large;
+      font-size: medium;
       text-decoration: line-through;
       color: hsl(228, 12%, 48%);
     }
 
     .text-sec {
+      margin: 20px 0;
       font-family: Fraunces;
       font-size: 40px;
       font-weight: 700;
@@ -70,14 +73,14 @@
 
     .text-sec-alt {
       font-family: Fraunces;
-      font-size: xx-large;
+      font-size: x-large;
       font-weight: 700;
       color: hsl(158, 36%, 37%);
     }
 
     #text-price {
-      margin-top: 35px;
-      margin-bottom: 35px;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
 
     #button {
@@ -110,7 +113,6 @@
   </style>
 </head>
 <body>
-
   <main class="wrapper">
     <section class="container">
       <div style="margin: 0; padding: 0;">
@@ -118,7 +120,7 @@
       </div>
       <div class="info">
         <p class="text-pri">P E R F U M E</p>
-        <p class="text-sec">Gabrielle Essence Eau Da Parfum</p>
+        <p class="text-sec">Gabrielle <br> Essence Eau <br> Da Parfum</p>
         <p class="text-pri">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
         <p id="text-price">
           <span  class="text-sec-alt">$149.99</span><span class="text-pri-alt">$169.99</span>
